@@ -1,72 +1,69 @@
-Lights Out App 🔆
+# Lights Out 🔆
 
-A minimalist Android puzzle game built with Kotlin.
-Your goal: turn off all the lights on the 3×3 board.
-Each tap toggles a tile — and its neighbors — creating a surprisingly tricky little brain-teaser.
+A simple Android puzzle game built with Kotlin.  
+Tap tiles to toggle their state — and the state of their neighbors — with the goal of turning **all lights off**.  
+Includes multiple color themes and a help screen explaining the rules.
 
-📸 Screenshots
-Game Board (Start)
+---
+
+## 📸 Screenshots
+
+### Game Start
 <img src="screenshots/start.png" width="300"/>
-After Tapping a Tile
+
+### After Tapping Tiles
 <img src="screenshots/new_game.png" width="300"/>
-Help Screen
+
+### Help Screen
 <img src="screenshots/help.png" width="300"/>
-Color Selection Menu
+
+### Color Selection
 <img src="screenshots/change_color.png" width="300"/>
-Board After Color Change
+
+### After Color Change
 <img src="screenshots/after_change_color.png" width="300"/>
-✨ Features
-🎮 Puzzle Gameplay
 
-Classic Lights Out mechanics
+---
 
-Tap a tile → toggles itself and its neighbors
+## ✨ Features
 
-Win by turning every tile dark
+- **Classic Lights Out gameplay**
+- **3×3 tile grid**
+- Tiles toggle their own color + neighbors
+- **New Game** button to reset the board
+- **Help** screen describing the rules
+- **Change Color** screen with multiple color themes
+- Clean and simple UI
 
-New Game button to restart instantly
+---
 
-🎨 Custom Colors
+## 🧰 Tech Stack
 
-Choose between four color themes
+- **Kotlin**
+- **Android Studio**
+- Activities + Intents
+- ConstraintLayout UI
+- Custom drawables for tiles
 
-UI updates automatically when a new theme is applied
+---
 
-❓ Help Menu
+## ▶️ How to Play
 
-Simple explanation of the game rules
+1. Tap a tile.  
+2. The tile and its neighbors switch color.  
+3. Turn every tile dark to win.  
+4. Use **Change Color** to try different themes.  
+5. Use **Help** anytime for instructions.
 
-Clean and beginner-friendly layout
+---
 
-🧩 Tech Stack
+## 📂 Project Overview
 
-Kotlin
+This project is organized in the standard Android structure:
 
-Android Studio
+- `java/edu/lukina/lightsout/` — Kotlin game logic & activities  
+- `res/layout/` — XML UI screens  
+- `res/drawable/` — tile graphics / backgrounds  
+- `screenshots/` — images used in this README  
 
-ConstraintLayout
-
-Drawable resources
-
-Multiple activities (Main, Help, Color Selection)
-
-📁 Project Structure
-app/
-├── src/
-│   └── main/
-│       ├── java/edu/lukina/lightsout/     → game logic + app activities
-│       ├── res/layout/                     → XML UI layouts
-│       └── res/drawable/                   → tile styles, custom graphics
-screenshots/                                 → images shown in this README
-
-🚀 How to Play
-
-Tap any tile in the 3×3 grid.
-
-The selected tile + its four neighbors flip color.
-
-Turn off all the lights to win!
-
-Use Change Color to pick your favorite theme.
-
-Press Help anytime to review the rules.
+---
